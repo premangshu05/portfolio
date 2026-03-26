@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premangshu Routh | Developer Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Premangshu Routh — CS student at LPU, full-stack developer, cybersecurity enthusiast." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NOISE OVERLAY -->
+  <div class="noise"></div>
+
+  <!-- MATRIX RAIN CANVAS -->
+  <canvas id="matrix-rain"></canvas>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">&lt;PR /&gt;</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#training">Training</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#competitive">CP</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-tag">
+          <span class="status-dot"></span>
+          Available for opportunities
+        </div>
+        <h1 class="hero-name stagger-reveal" style="--d: 0.1s">
+          Premangshu<br /><span class="name-accent">Routh</span>
+        </h1>
+        <div class="hero-role stagger-reveal" style="--d: 0.3s">
+          <span class="role-prefix">&lt;</span>
+          <span id="typed-text"></span><span class="cursor"></span>
+          <span class="role-prefix"> /&gt;</span>
+        </div>
+        <p class="hero-bio stagger-reveal" style="--d: 0.5s">
+          CS student at <strong>LPU</strong> building full-stack apps and exploring cybersecurity.
+          100+ DSA problems solved. Currently open to internships.
+        </p>
+        <div class="hero-actions stagger-reveal" style="--d: 0.7s">
+          <a href="#projects" class="btn btn-primary">View Work <i class="fas fa-arrow-right"></i></a>
+          <a href="#" class="btn btn-outline" id="resume-btn"><i class="fas fa-download"></i> Resume</a>
+        </div>
+        <div class="hero-socials stagger-reveal" style="--d: 0.9s">
+          <a href="https://github.com/premangshu05" target="_blank" rel="noopener" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/premangshu-routh-809150299" target="_blank" rel="noopener"
+            class="social-link">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:premangshurouth@gmail.com" class="social-link">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="profile-module-wrapper" data-aos>
+          <div class="profile-module">
+            <!-- DUAL NEON RINGS -->
+            <div class="profile-rings">
+              <div class="ring-outer"></div>
+              <div class="ring-inner"></div>
+            </div>
+
+            <!-- PROFILE MAIN CIRCLE -->
+            <div class="profile-circle">
+              <img src="profile.jpg" alt="Premangshu Routh" class="profile-img" />
+              <div class="profile-vignette"></div>
+              <div class="profile-glass-highlight"></div>
+            </div>
+
+            <!-- STATUS BADGE -->
+            <div class="profile-status">
+              <span class="status-dot-pulse"></span>
+              <span class="status-label">Available</span>
+            </div>
+
+            <!-- ORBITAL SKILL TAGS -->
+            <div class="profile-orbitals">
+              <div class="orbital-item item-1">
+                <i class="fas fa-shield-alt"></i> <span>Cybersecurity</span>
+              </div>
+              <div class="orbital-item item-2">
+                <i class="fas fa-terminal"></i> <span>100+ DSA</span>
+              </div>
+              <div class="orbital-item item-3">
+                <i class="fab fa-react"></i> <span>React Dev</span>
+              </div>
+            </div>
+          </div>
+          <!-- FLOATING GROUND SHADOW -->
+          <div class="profile-ground-shadow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-layout">
+        <div class="about-text">
+          <p class="about-big">I build things for the web<span class="dot-accent">.</span></p>
+          <p class="about-body">
+            Computer Science student at <strong>Lovely Professional University</strong> with a passion
+            for software development and cybersecurity. I enjoy building full-stack applications and
+            solving complex algorithmic problems.
+          </p>
+          <p class="about-body">
+            Currently sharpening skills in Data Structures, Linux, and cybersecurity tools while
+            building real-world projects. Aiming to create scalable systems and secure applications.
+          </p>
+          <div class="about-links">
+            <a href="https://github.com/premangshu05" target="_blank" class="about-link-btn">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://linkedin.com/in/premangshu-routh-809150299" target="_blank" class="about-link-btn">
+              <i class="fab fa-linkedin-in"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+        <div class="about-stats-col">
+          <div class="stat-box" data-aos>
+            <span class="stat-num" data-target="100">0</span><span class="stat-suffix">+</span>
+            <span class="stat-desc">DSA Problems</span>
+          </div>
+          <div class="stat-box" data-aos>
+            <span class="stat-num" data-target="3">0</span>
+            <span class="stat-desc">Projects Done</span>
+          </div>
+          <div class="stat-box" data-aos>
+            <span class="stat-num" data-target="2">0</span>
+            <span class="stat-desc">Certifications</span>
+          </div>
+          <div class="stat-box" data-aos>
+            <span class="stat-num about-cgpa">7.5</span>
+            <span class="stat-desc">CGPA @ LPU</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="edu-grid">
+
+        <div class="edu-card current-card" data-aos>
+          <div class="edu-badge">Current</div>
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>B.Tech — CSE</h3>
+          <p class="edu-school">Lovely Professional University</p>
+          <p class="edu-loc"><i class="fas fa-map-marker-alt"></i> Punjab, India</p>
+          <div class="edu-meta">
+            <span><i class="fas fa-calendar"></i> 2023 – Present</span>
+            <span class="cgpa-chip">CGPA: 7.5</span>
+          </div>
+        </div>
+
+        <div class="edu-card" data-aos>
+          <div class="edu-icon"><i class="fas fa-school"></i></div>
+          <h3>Intermediate — 12th</h3>
+          <p class="edu-school">Manindra Nath High School</p>
+          <p class="edu-loc"><i class="fas fa-map-marker-alt"></i> Cooch Behar, West Bengal</p>
+          <div class="edu-meta">
+            <span><i class="fas fa-calendar"></i> 2022 – 2023</span>
+            <span class="cgpa-chip">78%</span>
+          </div>
+        </div>
+
+        <div class="edu-card" data-aos>
+          <div class="edu-icon"><i class="fas fa-book"></i></div>
+          <h3>Matriculation — 10th</h3>
+          <p class="edu-school">Manindra Nath High School</p>
+          <p class="edu-loc"><i class="fas fa-map-marker-alt"></i> Cooch Behar, West Bengal</p>
+          <div class="edu-meta">
+            <span><i class="fas fa-calendar"></i> 2020 – 2021</span>
+            <span class="cgpa-chip">82%</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="skills-outer">
+
+        <div class="skill-group" data-aos>
+          <div class="skill-group-header">
+            <span class="skill-group-icon"><i class="fas fa-code"></i></span>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill"><i class="devicon-cplusplus-plain"></i>C++</span>
+            <span class="skill-pill"><i class="fab fa-java"></i>Java</span>
+            <span class="skill-pill"><i class="fas fa-copyright"></i>C</span>
+          </div>
+        </div>
+
+        <div class="skill-group" data-aos>
+          <div class="skill-group-header">
+            <span class="skill-group-icon"><i class="fas fa-globe"></i></span>
+            <h3>Web Dev</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill"><i class="fab fa-html5"></i>HTML</span>
+            <span class="skill-pill"><i class="fab fa-css3-alt"></i>CSS</span>
+            <span class="skill-pill"><i class="fab fa-js"></i>JavaScript</span>
+            <span class="skill-pill"><i class="fab fa-react"></i>React</span>
+            <span class="skill-pill"><i class="fab fa-node-js"></i>Node.js</span>
+          </div>
+        </div>
+
+        <div class="skill-group" data-aos>
+          <div class="skill-group-header">
+            <span class="skill-group-icon"><i class="fas fa-tools"></i></span>
+            <h3>Tools</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill"><i class="fas fa-database"></i>MySQL</span>
+            <span class="skill-pill"><i class="fab fa-git-alt"></i>Git</span>
+            <span class="skill-pill"><i class="fab fa-linux"></i>Kali Linux</span>
+            <span class="skill-pill"><i class="fas fa-network-wired"></i>Nmap</span>
+            <span class="skill-pill"><i class="fas fa-ethernet"></i>Wireshark</span>
+          </div>
+        </div>
+
+        <div class="skill-group" data-aos>
+          <div class="skill-group-header">
+            <span class="skill-group-icon"><i class="fas fa-brain"></i></span>
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill"><i class="fas fa-puzzle-piece"></i>Problem Solving</span>
+            <span class="skill-pill"><i class="fas fa-users"></i>Team Player</span>
+            <span class="skill-pill"><i class="fas fa-sync-alt"></i>Adaptability</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-list">
+
+        <div class="project-item" data-aos>
+          <div class="project-left">
+            <span class="project-num">01</span>
+            <div class="project-info">
+              <h3>RealityCheck: Interactive AI-Awareness Game</h3>
+              <span class="project-year-tag">2026</span>
+              <p>Built a full-stack React &amp; Node.js web game where users distinguish AI-generated from human-written text.
+                Engineered a backend pipeline to concurrently generate non-repeating 4-option text scenarios without a database.
+                Architected a React FSM (useReducer) managing game loops, 15-second timers, and psychological scoring.</p>
+              <div class="proj-tags">
+                <span>React</span><span>JavaScript</span><span>Vite</span><span>Node.js</span><span>Express</span><span>CSS</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-links-col">
+            <a href="https://github.com/premangshu05/RealityCheck" target="_blank" class="proj-link-btn"><i class="fab fa-github"></i> Code</a>
+            <a href="#" target="_blank" class="proj-link-btn proj-live"><i class="fas fa-external-link-alt"></i> Live</a>
+          </div>
+        </div>
+
+        <div class="project-item" data-aos>
+          <div class="project-left">
+            <span class="project-num">02</span>
+            <div class="project-info">
+              <h3>Project Management App</h3>
+              <span class="project-year-tag">2026</span>
+              <p>Built a full-stack project management app with a React + Vite frontend and Node.js/Express backend.
+                Implemented task creation, assignment, and status tracking with a component-based responsive UI.
+                Deployed frontend on Vercel with backend hosted separately for a decoupled, scalable architecture.</p>
+              <div class="proj-tags">
+                <span>React</span><span>Vite</span><span>Node.js</span><span>Express</span><span>CSS</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-links-col">
+            <a href="https://github.com/premangshu05/project-management-app" target="_blank" class="proj-link-btn"><i class="fab fa-github"></i> Code</a>
+            <a href="#" target="_blank" class="proj-link-btn proj-live"><i class="fas fa-external-link-alt"></i> Live</a>
+          </div>
+        </div>
+
+        <div class="project-item" data-aos>
+          <div class="project-left">
+            <span class="project-num">03</span>
+            <div class="project-info">
+              <h3>Efficient Page Replacement Simulator</h3>
+              <span class="project-year-tag">2025</span>
+              <p>Developed a simulation tool illustrating FIFO, LRU, and Optimal page replacement algorithms within an OS context.
+                Implemented all three algorithms from scratch with accurate behaviour modelling and edge-case handling.
+                Implemented dynamic input controls for custom reference strings and configurable frame sizes.</p>
+              <div class="proj-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-links-col">
+            <a href="https://github.com/premangshu05/efficient-page-replacement-simulator" target="_blank" class="proj-link-btn"><i class="fab fa-github"></i> Code</a>
+            <a href="#" target="_blank" class="proj-link-btn proj-live"><i class="fas fa-external-link-alt"></i> Live</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAINING & CERTS -->
+  <section id="training" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">05</span>
+        <h2 class="section-title">Training &amp; Certificates</h2>
+      </div>
+
+      <!-- Training entry -->
+      <div class="tc-list" style="margin-bottom: 56px;">
+        <div class="tc-item" data-aos>
+          <div class="tc-left">
+            <span class="tc-type training-type">Training</span>
+            <span class="tc-year">2025</span>
+          </div>
+          <div class="tc-content">
+            <h3>🧩 Data Structures &amp; Algorithms</h3>
+            <p class="tc-org">Summer Intensive Program</p>
+            <p>Intensive program covering arrays, linked lists, stacks, queues, trees, graphs,
+              hashing, sorting, and complexity analysis.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate Gallery -->
+      <p class="cert-gallery-label">Certificates</p>
+      <div class="cert-gallery">
+
+        <div class="cert-card" data-aos
+          onclick="openCert('certs/cert-dsa.png','Data Structures and Algorithm Summer Training')">
+          <div class="cert-img-wrap">
+            <img src="certs/cert-dsa.png" alt="DSA Training Certificate" loading="lazy" />
+            <div class="cert-overlay">
+              <i class="fas fa-expand"></i>
+            </div>
+          </div>
+          <div class="cert-info">
+            <span class="cert-type-tag training-type">Training</span>
+            <h4>🧩 Data Structures &amp; Algorithm Summer Training</h4>
+            <p class="cert-issuer"><i class="fas fa-calendar"></i> 2025</p>
+          </div>
+        </div>
+
+        <div class="cert-card" data-aos
+          onclick="openCert('certs/cert-computational.png','Computational Theory: Language Principle & Finite Automata Theory')">
+          <div class="cert-img-wrap">
+            <img src="certs/cert-computational.png" alt="Computational Theory Certificate" loading="lazy" />
+            <div class="cert-overlay">
+              <i class="fas fa-expand"></i>
+            </div>
+          </div>
+          <div class="cert-info">
+            <span class="cert-type-tag cert-type">Certificate</span>
+            <h4>⚙️ Computational Theory &amp; Finite Automata</h4>
+            <p class="cert-issuer"><i class="fas fa-building"></i> Infosys Springboard · 2025</p>
+          </div>
+        </div>
+
+        <div class="cert-card" data-aos
+          onclick="openCert('certs/cert-genai.png','Master Generative AI & Generative AI tools (ChatGPT & more)')">
+          <div class="cert-img-wrap">
+            <img src="certs/cert-genai.png" alt="Generative AI Certificate" loading="lazy" />
+            <div class="cert-overlay">
+              <i class="fas fa-expand"></i>
+            </div>
+          </div>
+          <div class="cert-info">
+            <span class="cert-type-tag cert-type">Certificate</span>
+            <h4>🧠 Master Generative AI &amp; ChatGPT</h4>
+            <p class="cert-issuer"><i class="fab fa-udemy"></i> Udemy · 2025</p>
+          </div>
+        </div>
+
+        <div class="cert-card" data-aos
+          onclick="openCert('certs/cert-genai-nocode.png','Build Generative AI Apps and Solutions with No-Code Tools')">
+          <div class="cert-img-wrap">
+            <img src="certs/cert-genai-nocode.png" alt="Infosys Springboard Generative AI Certificate" loading="lazy" />
+            <div class="cert-overlay">
+              <i class="fas fa-expand"></i>
+            </div>
+          </div>
+          <div class="cert-info">
+            <span class="cert-type-tag cert-type">Certificate</span>
+            <h4>🤖 Build Generative AI Apps with No-Code Tools</h4>
+            <p class="cert-issuer"><i class="fas fa-building"></i> Infosys Springboard · 2025</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="cert-lightbox" id="certLightbox" onclick="closeCert()">
+    <div class="cert-lightbox-inner" onclick="event.stopPropagation()">
+      <button class="cert-close" onclick="closeCert()"><i class="fas fa-times"></i></button>
+      <img id="certLightboxImg" src="" alt="" />
+      <p id="certLightboxTitle"></p>
+    </div>
+  </div>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">06</span>
+        <h2 class="section-title">Achievements</h2>
+      </div>
+      <div class="achievements-row">
+        <div class="achievement-big" data-aos>
+          <div class="ach-number">100<span>+</span></div>
+          <div class="ach-right">
+            <h3>DSA Problems Solved</h3>
+            <p>Solved 100+ Data Structures and Algorithm problems across LeetCode and GeeksforGeeks,
+              building strong algorithmic thinking and problem-solving skills.</p>
+            <div class="ach-platforms">
+              <span class="plat-badge lc"><i class="fas fa-code"></i> LeetCode</span>
+              <span class="plat-badge gfg"><i class="fas fa-laptop-code"></i> GeeksforGeeks</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPETITIVE PROGRAMMING -->
+  <section id="competitive" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">07</span>
+        <h2 class="section-title">Competitive Programming</h2>
+      </div>
+      <div class="cp-layout">
+        <div class="cp-platforms-col" data-aos>
+          <h3 class="cp-sub">Platforms</h3>
+          <a href="https://leetcode.com" target="_blank" class="cp-card lc-card">
+            <div class="cp-card-icon"><i class="fas fa-code"></i></div>
+            <div>
+              <p class="cp-card-name">LeetCode</p>
+              <p class="cp-card-desc">Active solver</p>
+            </div>
+            <i class="fas fa-arrow-up-right-from-square cp-ext"></i>
+          </a>
+          <a href="https://geeksforgeeks.org" target="_blank" class="cp-card gfg-card" style="--d: 0.1s">
+            <div class="cp-card-icon"><i class="fas fa-laptop-code"></i></div>
+            <div>
+              <p class="cp-card-name">GeeksforGeeks</p>
+              <p class="cp-card-desc">DSA practice</p>
+            </div>
+            <i class="fas fa-arrow-up-right-from-square cp-ext"></i>
+          </a>
+          <!-- TryHackMe from Reference -->
+          <a href="https://tryhackme.com/p/prithwirajroy431" target="_blank" class="cp-card thm-card" style="--d: 0.2s">
+            <div class="cp-card-icon"><i class="fas fa-shield-alt"></i></div>
+            <div>
+              <p class="cp-card-name">TryHackMe</p>
+              <p class="cp-card-desc">Cyber Learning</p>
+            </div>
+            <i class="fas fa-arrow-up-right-from-square cp-ext"></i>
+          </a>
+        </div>
+        <div class="cp-focus-col" data-aos>
+          <h3 class="cp-sub">Focus Areas</h3>
+          <div class="cp-topics-grid">
+            <div class="cp-topic-chip"><i class="fas fa-layer-group"></i> Arrays &amp; Strings</div>
+            <div class="cp-topic-chip"><i class="fas fa-stack-overflow"></i> Stacks &amp; Monotonic</div>
+            <div class="cp-topic-chip"><i class="fas fa-sort-amount-up"></i> Sorting &amp; Searching</div>
+            <div class="cp-topic-chip"><i class="fas fa-clock"></i> Time Complexity</div>
+            <div class="cp-topic-chip"><i class="fas fa-sitemap"></i> Trees &amp; Graphs</div>
+            <div class="cp-topic-chip"><i class="fas fa-link"></i> Linked Lists</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">08</span>
+        <h2 class="section-title">Contact</h2>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-left" data-aos>
+          <p class="contact-headline">Let's work<br />together<span class="dot-accent">.</span></p>
+          <p class="contact-sub">Open to internships, collaborations, and full-time opportunities.</p>
+          <div class="contact-items">
+            <a href="mailto:premangshurouth@gmail.com" class="contact-item">
+              <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <p class="ci-label">Email</p>
+                <p class="ci-value">premangshurouth@gmail.com</p>
+              </div>
+            </a>
+            <a href="tel:+918918105580" class="contact-item">
+              <div class="ci-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <p class="ci-label">Phone</p>
+                <p class="ci-value">+91‑8918105580</p>
+              </div>
+            </a>
+            <a href="https://github.com/premangshu05" target="_blank" class="contact-item">
+              <div class="ci-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <p class="ci-label">GitHub</p>
+                <p class="ci-value">github.com/premangshu05</p>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/premangshu-routh-809150299" target="_blank" class="contact-item">
+              <div class="ci-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <p class="ci-label">LinkedIn</p>
+                <p class="ci-value">premangshu-routh-809150299</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right" data-aos>
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="John Doe" required />
+                <span class="form-error" id="name-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="john@example.com" required />
+                <span class="form-error" id="email-error"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" placeholder="Internship Opportunity" required />
+              <span class="form-error" id="subject-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" placeholder="Your message..." required></textarea>
+              <span class="form-error" id="message-error"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+            <div class="form-success" id="form-success">
+              <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <p class="footer-logo">&lt;PR /&gt;</p>
+      <p class="footer-copy">Designed &amp; built by Premangshu Routh &copy; 2025</p>
+      <div class="footer-socials">
+        <a href="https://github.com/premangshu05" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/premangshu-routh-809150299" target="_blank"><i
+            class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:premangshurouth@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#hero" class="back-to-top" id="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
